@@ -1,27 +1,93 @@
 const fruits = [
   { name: 'durian', title: 'Durian' },
-  { name: 'guava', title: 'Guava', imageSource: '' },
-  { name: 'lychee', title: 'Lychee', imageSource: '' },
-  { name: 'passionfruit', title: 'Passionfruit', imageSource: '' },
-  { name: 'kiwi', title: 'Kiwi', imageSource: '' },
-  { name: 'papaya', title: 'Papaya', imageSource: '' },
-  { name: 'coconut', title: 'Coconut', imageSource: '' },
-  // { name: 'dragon fruit', title: 'Dragon fruit', imageSource: '' },
-  // { name: 'pineapple', title: 'Pineapple', imageSource: '' },
-  // { name: 'mango', title: 'Mango', imageSource: '' },
-  // { name: 'prickly pear', title: 'Prickly pear', imageSource: '' },
-  // { name: 'banana', title: 'Banana', imageSource: '' },
-  // { name: 'jackfruit', title: 'Jackfruit', imageSource: '' },
-  // { name: 'tamarind', title: 'Tamarind', imageSource: '' },
-  // { name: 'star fruit', title: 'Star fruit', imageSource: '' },
-  // { name: 'pomelo', title: 'Pomelo', imageSource: '' },
-  // { name: 'avocado', title: 'Avocado', imageSource: '' },
-  // { name: 'acai', title: 'Acai', imageSource: '' },
-  // { name: 'apple', title: 'Apple', imageSource: '' },
-  // { name: 'orange', title: 'Orange', imageSource: '' },
-  // { name: 'grapes', title: 'Grapes', imageSource: '' },
-  // { name: 'strawberry', title: 'Strawberry', imageSource: '' },
-  // { name: 'melon', title: 'Melon', imageSource: '' },
+  {
+    name: 'guava',
+    title: 'Guava',
+  },
+  {
+    name: 'lychee',
+    title: 'Lychee',
+  },
+  {
+    name: 'passionfruit',
+    title: 'Passion fruit',
+  },
+  {
+    name: 'kiwi',
+    title: 'Kiwi',
+  },
+  {
+    name: 'papaya',
+    title: 'Papaya',
+  },
+  {
+    name: 'coconut',
+    title: 'Coconut',
+  },
+  {
+    name: 'dragonfruit',
+    title: 'Dragon fruit',
+  },
+  {
+    name: 'pineapple',
+    title: 'Pineapple',
+  },
+  {
+    name: 'mango',
+    title: 'Mango',
+  },
+  {
+    name: 'pricklypear',
+    title: 'Prickly pear',
+  },
+  {
+    name: 'banana',
+    title: 'Banana',
+  },
+  {
+    name: 'jackfruit',
+    title: 'Jackfruit',
+  },
+  {
+    name: 'tamarind',
+    title: 'Tamarind',
+  },
+  {
+    name: 'starfruit',
+    title: 'Star fruit',
+  },
+  {
+    name: 'pomelo',
+    title: 'Pomelo',
+  },
+  {
+    name: 'avocado',
+    title: 'Avocado',
+  },
+  {
+    name: 'acai',
+    title: 'Acai',
+  },
+  {
+    name: 'apple',
+    title: 'Apple',
+  },
+  {
+    name: 'orange',
+    title: 'Orange',
+  },
+  {
+    name: 'grapes',
+    title: 'Grapes',
+  },
+  {
+    name: 'strawberry',
+    title: 'Strawberry',
+  },
+  {
+    name: 'melon',
+    title: 'Melon',
+  },
 ];
 
 export default fruits;

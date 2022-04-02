@@ -27,12 +27,14 @@ function App() {
           setHighScore={setHighScore}
         />
       </header>
-      <Gameboard
-        currentScore={currentScore}
-        setCurrentScore={setCurrentScore}
-        highScore={highScore}
-        setHighScore={setHighScore}
-      />
+      <div>
+        <Gameboard
+          currentScore={currentScore}
+          setCurrentScore={setCurrentScore}
+          highScore={highScore}
+          setHighScore={setHighScore}
+        />
+      </div>
     </div>
   );
 }

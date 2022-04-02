@@ -9,8 +9,8 @@ const Gameboard = (props) => {
   const [hasWon, setHasWon] = useState(false);
 
   useEffect(() => {
-    generateRandKeys();
-  }, [selectedCards]);
+    generateKeys();
+  }, []);
 
   useEffect(() => {
     const updateHighScore = () => {
@@ -38,13 +38,12 @@ const Gameboard = (props) => {
 
   const chooseCard = (e) => {
     const array = [...selectedCards];
-    array.push(e.target.id);
-    console.log(array);
+    array.push(e.target.dataset.index);
     setSelectedCards(array);
   };
 
   const checkForPoint = (e) => {
-    const fruit = e.target.id;
+    const fruit = e.target.dataset.index;
     if (selectedCards.indexOf(fruit) === -1) {
       props.setCurrentScore(props.currentScore + 1);
     } else {
@@ -73,14 +72,13 @@ const Gameboard = (props) => {
 
   const addUnselectedChoice = () => {
     let randInt = randomNumber(0, fruits.length - 1);
-
-    while (getIndexOfObjectArray(fruits, selectedCards[randInt]) !== -1) {
+    while (selectedCards.indexOf(fruits[randInt].name) !== -1) {
       randInt = randomNumber(0, fruits.length - 1);
     }
     return randInt;
   };
 
-  const generateRandKeys = () => {
+  const generateKeys = () => {
     const cardCount = 6;
     const randKeys = [];
     for (let i = 0; i < cardCount; i++) {
@@ -93,13 +91,13 @@ const Gameboard = (props) => {
     if (selectedCards.length > 0) {
       const existingChoice = addExistingChoice();
       if (randKeys.indexOf(existingChoice) === -1) {
-        randKeys[randomNumber(0, randKeys.length)] = existingChoice;
+        randKeys[randomNumber(0, randKeys.length - 1)] = existingChoice;
       }
-    }
-    if (selectedCards.length < fruits.length) {
-      const newChoice = addUnselectedChoice();
-      if (randKeys.indexOf(newChoice) === -1) {
-        randKeys[randomNumber(0, randKeys.length)] = newChoice;
+      if (selectedCards.length !== fruits.length) {
+        const newChoice = addUnselectedChoice();
+        if (randKeys.indexOf(newChoice) === -1) {
+          randKeys[randomNumber(0, randKeys.length - 1)] = newChoice;
+        }
       }
     }
     setRandKeys(randKeys);
@@ -114,13 +112,13 @@ const Gameboard = (props) => {
   const handleClick = (e) => {
     chooseCard(e);
     checkForPoint(e);
-    generateRandKeys();
+    generateKeys();
     checkForWin();
   };
 
   if (!hasWon) {
     return (
-      <div>
+      <div className="game-board">
         <Cards
           chooseCard={chooseCard}
           checkArrays={checkArrays}
@@ -132,8 +130,8 @@ const Gameboard = (props) => {
     );
   }
   return (
-    <div>
-      <div>You won</div>
+    <div className="win-screen">
+      <div>You won!</div>
       <button onClick={resetGame}>Restart</button>
     </div>
   );
