@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/memory-card-game/static/css/main.a7cc0d89.css",
+    "main.css": "/memory-card-game/static/css/main.1407478e.css",
     "main.js": "/memory-card-game/static/js/main.c1c59d24.js",
     "static/js/787.079dd69e.chunk.js": "/memory-card-game/static/js/787.079dd69e.chunk.js",
     "static/media/jackfruit.jpg": "/memory-card-game/static/media/jackfruit.22b1cce6ed539f361f46.jpg",
@@ -27,12 +27,12 @@
     "static/media/starfruit.jpg": "/memory-card-game/static/media/starfruit.4312de54a5224fe5fe3d.jpg",
     "static/media/pricklypear.jpg": "/memory-card-game/static/media/pricklypear.53afc0dc452b2a94ff3b.jpg",
     "index.html": "/memory-card-game/index.html",
-    "main.a7cc0d89.css.map": "/memory-card-game/static/css/main.a7cc0d89.css.map",
+    "main.1407478e.css.map": "/memory-card-game/static/css/main.1407478e.css.map",
     "main.c1c59d24.js.map": "/memory-card-game/static/js/main.c1c59d24.js.map",
     "787.079dd69e.chunk.js.map": "/memory-card-game/static/js/787.079dd69e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7cc0d89.css",
+    "static/css/main.1407478e.css",
     "static/js/main.c1c59d24.js"
   ]
 }
